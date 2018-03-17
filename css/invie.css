@@ -1,0 +1,466 @@
+
+ /* /*tipo de selector {
+	propiedad: valor;
+	propiedad2: valor;
+}*/
+
+
+
+
+	
+
+
+/*
+
+ SELECTOR UNIVERSAL
+
+*{
+*	border: 1px solid red;
+	margin: 10px;
+
+}
+
+  SELECTOR DE ETIQUETA 
+
+header{
+	background: blue;
+}
+
+section{
+	background: purple;
+}
+
+
+  SELECTOR DE DESCENDENTE 
+
+article h3{
+	color: green;
+}
+
+  SELECTOR DE CLASE
+
+.title-a{
+	background: yellow;
+}
+
+.title-b{
+	background: salmon;
+}
+
+
+  SELECTOR DE ID (deben ser unicos por pagina) 
+
+#header{
+	border:  3px solid black;
+}
+
+#portada{
+	border:  3px solid orange;
+}
+
+#guitarra{
+	border:  3px solid brown;
+
+} 
+  */
+/* margin border padding contenido 
+ */
+
+/* *{
+    width: tamaño ;
+	height: tamaño ; 
+	padding: 10px;
+	 EN SENTIDO HORARIO ARRIBA,DERECHA,ABAJO,IZQUIERDA
+	 
+
+	padding-top: 10px;
+	padding-right: 13px;
+	padding-bottom: 5px;
+	padding-left: 15px;
+
+	margin: 10px;
+	margin-top: 10px;
+	margin-right: 13px;
+	margin-bottom: 5px;
+	margin-left: 15px; 
+	margin: 10px 13px 5px 15px
+	border: 2px solid red;
+}  */
+
+/* border-radius: 50%
+ Si un elemento es cuadrado, podemos hacerlo totalmente redondo, solo agregando un valor 50%.  */
+ 
+ body{
+ 	font-family: 'Allerta', sans-serif;
+	margin: 0px;
+ }
+
+ input, textarea{
+ 	outline: 0;
+ }
+ input:focus,textarea:focus{
+ 	background: lightgray;
+ }
+
+
+
+table{
+	width: 100%;
+
+
+}
+
+th{
+	background: #273b47;
+	color: white;
+
+}
+
+th{
+	padding: 10px 20px;
+	text-align: left;
+}
+td{
+	padding: 20px;
+}
+
+table, td, th{
+	border: 1px solid #273b47;
+
+	border-collapse: collapse;
+	
+}
+
+
+
+/*  CLASES UTILITARIAS .contenedor Y * background*/
+
+ .contenedor{
+	width: 800px;
+	margin: auto;
+	position: relative;
+}
+
+
+.background{
+	background-image: url('../images/background.png');
+	background-size: cover;
+}
+
+ .button{
+ 	border-radius: 12px;
+ 	border: none;
+ 	background: #fd324e;
+ 	color: white; 
+ 	padding: 7px 12px;
+ 	/* para que cambie el cursor de flechita a una manito */
+ 	cursor: pointer;
+ 	font-size: 18px;
+ 	/* para degradar colores */
+ 	background: linear-gradient(to left, #fe344e,#ff7250);
+ 	text-decoration: none;
+ }
+
+.titulo{
+	font-family: 'Montserrat', sans-serif; 
+	font-size: 70px; /*tamaño de fuente de letra*/
+	margin-bottom: 0;
+	margin-top:  70px;
+}
+.titulo span{
+	text-decoration: underline;
+
+}
+
+.title-a{
+	font-size: 24px;
+	margin-top: 0;
+}
+
+
+.title-b{
+	font-size: 50px;
+	margin-bottom: 20px;
+}
+
+
+.guitarra{
+	color: #1F313C ;
+	margin-bottom: 50px;
+
+}
+
+.guitarras h2{
+	font-size: 35px;
+	font-family: 'Montserrat', sans-serif; 
+}
+
+.portada{
+	
+	color: white;
+	padding:20px;
+	height: 500px;
+
+}
+
+
+.portada button{
+	margin-bottom: 70px;
+}
+
+ 
+.menu{
+	font-size: 24px;
+	display: inline-block;
+	position: absolute;
+
+	right: 0;
+}
+ 
+
+.menu li{
+	display: inline-block;
+	margin-left: 30px;
+}
+.menu a{
+	color: white;
+	text-decoration: none;
+}
+
+
+.logotipo{
+	display: inline-block;
+	margin-left: 0;
+
+}
+
+
+
+
+
+
+.guitarras{
+	margin:  10px 10px 40px 10px;
+	padding: 10px ;
+	/* overflow: hidden; */
+	border: 1px solid #1F313C ;
+	border-radius: 8px;
+}
+
+
+/* para un elemento que tiene 2 clases pero solo especificar
+a la clase .b pero tener si o si la clase .guitarra para solo afectar 
+a la clase .b 
+
+PERO PARA HACER ELLO NO HAY QUE DEJAR ESPACIOS NI COMAS*/
+
+.guitarras.b{
+	height: 190px;
+}
+
+
+.guitarra ol{
+	padding: 0;
+	
+
+}
+
+
+
+.derecha{
+	float: right;
+	position: relative;
+	top: -141px;
+}
+
+.izquierda{
+	float: left;
+	position: relative;
+
+
+}
+
+
+
+.contenedor-guitarra-a{
+	
+	padding-left: 20px;
+
+}
+
+
+.contenedor-guitarra-b{
+	margin-left: 370px;
+	position: relative;
+	bottom: 90px;
+
+}
+
+
+.header{
+	position: relative;
+}
+
+/* 
+POSITIONS
+RELATIVE  está posicionado en relación con su posición normal.
+ABSOLUTE se coloca en relación con el antecesor posicionado más cercano (a un relativo mas cercano).
+FIXED   se coloca en relación con la ventana gráfica, lo que significa que siempre permanece en el mismo lugar */
+
+
+
+.footer{
+	background: #273b47;
+	padding: 50px 10px;
+}
+
+.contacto {
+	display: flex;
+	width: 300px;
+	flex-wrap: wrap;
+
+	align-items: center;
+}
+
+.contacto img{
+	display: block
+}
+
+.contacto strong{
+	display: block;
+
+}
+
+.contacto a{
+	color: white;
+	text-decoration: none;
+	margin: 10px 10px 10px 0 ;
+
+} 
+
+/* del selector footer entra hasta el selector contenedor */
+
+.footer .contenedor{
+	display: flex;
+	justify-content: space-between;
+}
+.formulario{
+	display: flex;
+	width: 400px;
+	color: white;
+	
+}
+
+
+/* la como se usa como un Y para que afecte a 
+ambos en selecetores de clase
+ */
+.col1, .col2{
+	display: flex;
+	flex-direction: column;
+}
+
+.col1{
+	margin-right: 15px;
+}
+
+
+.col2{
+	align-items: flex-start;
+}
+
+
+.col2 .button{
+	margin-top: 15px;
+}
+
+
+
+
+.intereses label{
+	font-size: 12px;
+
+}
+.formulario label, .sexo, .intereses{
+	margin-bottom: 10px;
+
+}
+
+
+
+.sexo{
+	margin-top: 10px;
+
+}
+
+
+
+/* 					
+					FLEXBOX
+
+Usar Flexbox en CSS
+Display flex nos ayuda a que elementos hijos de un contenedor padre 
+se distribuyan ordenadamente tanto vertical cómo horizontalmente. 
+Sus diferentes propiedades nos permiten crear layouts de forma sencilla. 
+
+SE USA CON:; display: flex;
+ :
+#pond {
+  display: flex;
+	
+};
+
+http://flexboxfroggy.com/#es
+
+justify-content -> la cual alinea elementos horizontalmente 
+					y acepta los siguientes valores:
+
+flex-start: Alinea elementos al lado izquierdo del contenedor.
+flex-end: Alinea elementos al lado derecho del contenedor.
+center: Alinea elementos en el centro del contenedor.
+space-between: Muestra elementos con la misma distancia entre ellos.
+space-around: Muestra elementos con la misma separación alrededor de ellos.
+Por ejemplo, justify-content: flex-end; moverá la rana a la derecha.
+
+------------------------------
+
+ align-items ->  alinea elementos verticalmente y acepta los siguientes valores:
+
+ flex-start: Alinea elementos a la parte superior del contenedor.
+flex-end: Alinea elementos a la parte inferior del contenedor.
+center: Alinea elementos en el centro (verticalmente hablando) del contenedor.
+baseline: Muestra elementos en la línea base del contenedor
+stretch: Elementos se estiran para ajustarse al contenedor.
+
+-------------------------------------------------
+
+flex-direction -> define la dirección de los elementos en el contenedor, y acepta los siguientes valores:
+
+row: Elementos son colocados en la misma dirección del texto.
+row-reverse: Elementos son colocados en la dirección opuesta al texto.
+column: Elementos se colocan de arriba hacia abajo.
+column-reverse: Elementos se colocan de abajo hacia arriba. */
+
+
+
+
+
+
+/* PSEUDOELEMENTOS Y ENTIDADES USANDO ::
+Para los que tiene problemas
+solución en SUBLIME TEXT les comparto mi código a mi me funciona con after
+ y no con before , y recuerden con :: */
+
+.menu li::before{
+
+	content: '∘';
+	
+	line-height: 20px;
+	color: white;
+
+
+}
+
+.tabla{
+	margin: 50px 0px;
+}
